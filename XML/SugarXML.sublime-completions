@@ -1,0 +1,43 @@
+{
+	"scope": "text.xml",
+
+	"completions":
+	[
+		{ "trigger": "click", "contents": "click=\"true\"" },
+		{ "trigger": "admin", "contents": "<var var=\"nav_action\" set=\"admin_link\" />\n<script file=\"{@global.scriptsdir}/modules/lib/Nav_UserActions.xml\" />\n" },		
+		{ "trigger": "script", "contents": "<!script file=\"{@global.scriptsdir}/modules/lib/$1.xml\" />" },
+		{ "trigger": "menu", "contents": "<var var=\"nav_themeGroup\" set=\"All\" />\n<var var=\"nav_moduleName\" set=\"$1\" />\n<script file=\"{@global.scriptsdir}/modules/lib/Nav_Click.xml\" />" },
+		{ "trigger": "submenu", "contents": "<var var=\"nav_themeGroup\" set=\"All\" />\n<var var=\"nav_moduleName\" set=\"${1:MODULE}\" />\n<var var=\"nav_subMenuItem\" set=\"${2:LIST_ITEM}\" />\n<script file=\"{@global.scriptsdir}/modules/lib/Nav_SubMenuItem.xml\" />" },
+		{ "trigger": "qalogin", "contents": "<script file=\"{@global.scriptsdir}/modules/lib/logout.xml\" />\n<script file=\"{@global.scriptsdir}/modules/lib/Login_qauser_Lib.xml\" />" },
+		{ "trigger": "test", "contents": "<soda>\n\t<!-- Bug #$1 -->\n\t<!-- $2 -->\n\t<puts text=\"Test: ${3:TEST_NAME}.xml starting.\" />\n\n\t<csv file=\"{@global.scriptsdir}/csvs/${4:MODULE}/${3:TEST_NAME}.csv\" var=\"${3:TEST_NAME}\">\n\t\n\t</csv>\n\n\t<!-- Clean-up changes -->\n\n\t<puts text=\"Test: ${3:TEST_NAME}.xml finished.\" />\n</soda>" },
+		{ "trigger": "findrec", "contents": "<button id=\"search_form_clear\" />\n<textfield id=\"name_basic\" set=\"$1\" />\n<button id=\"search_form_submit\" />" },
+		{ "trigger": "button", "contents": "<button id=\"$1\" />" },
+		{ "trigger": "link", "contents": "<link id=\"$1\" />" },
+		{ "trigger": "a", "contents": "<link id=\"$1\" />" },
+		{ "trigger": "checkbox", "contents": "<checkbox id=\"$1\" set=\"true\" />" },
+		{ "trigger": "select", "contents": "<select id=\"$1\" set=\"$2\" />" },
+		{ "trigger": "textfield", "contents": "<textfield id=\"$1\" set=\"{@$2}\" />" },
+		{ "trigger": "textarea", "contents": "<textarea id=\"$1\" set=\"$2\" />" },
+		{ "trigger": "image", "contents": "<image id=\"$1\" click=\"true\" />" },
+		{ "trigger": "img", "contents": "<image id=\"$1\" click=\"true\" />" },
+		{ "trigger": "radio", "contents": "<radio id=\"$1\" click=\"true\" />" },
+		{ "trigger": "div", "contents": "<div id=\"$1\">\n\t$2\n</div>" },
+		{ "trigger": "table", "contents": "<table id=\"$1\">\n\t$2\n</table>" },
+		{ "trigger": "javascript", "contents": "<javascript>\n\t$1\n</javascript>" },
+		{ "trigger": "js", "contents": "<javascript>\n\t$1\n</javascript>" },
+		{ "trigger": "edit", "contents": "<var var=\"nav_action\" set=\"edit_button\" />\n<script file=\"{@global.scriptsdir}/modules/lib/Nav_DetailViewActions.xml\" />\n" },
+		{ "trigger": "save", "contents": "<var var=\"nav_action\" set=\"SAVE_HEADER\" />\n<script file=\"{@global.scriptsdir}/modules/lib/Nav_EditViewActions.xml\" />\n" },
+		{ "trigger": "override", "contents": "<csv override=\"{@global.scriptsdir}/csvs/$2/$1\" />" },
+		{ "trigger": "assert", "contents": "<browser assert=\"$1\" />" },
+		{ "trigger": "ba", "contents": "<browser assert=\"$1\" />" },
+		{ "trigger": "ban", "contents": "<browser assertnot=\"$1\" />" },
+		{ "trigger": "refresh", "contents": "<browser action=\"refresh\" />" },
+		{ "trigger": "close", "contents": "<browser action=\"close\" />" },
+		{ "trigger": "alert", "contents": "<alert alert=\"true\" />" },
+		{ "trigger": "attach", "contents": "<attach index=\"1\">\n\t$1\n</attach>" },
+		{ "trigger": "wait", "contents": "<wait timeout=\"$1\" />" },
+		{ "trigger": "subpanel", "contents": "<var var=\"nav_subpanelID\" set=\"${1:WHOLE_SELECTION_MODULENAME}\" />\n<var var=\"nav_action\" set=\"$2\" />\n<script file=\"{@global.scriptsdir}/modules/lib/Nav_SubPanelActions.xml\" />" },
+		{ "trigger": "csv", "contents": "<csv file=\"{@global.scriptsdir}/csvs/$2/$1.csv\" var=\"$1\">\n\t$3\n</csv>" }
+
+	]
+}
