@@ -5,7 +5,7 @@
 	[
 		{ "trigger": "click", "contents": "click=\"true\"" },
 		{ "trigger": "admin", "contents": "<var var=\"nav_action\" set=\"admin_link\" />\n<script file=\"{@global.scriptsdir}/modules/lib/Nav_UserActions.xml\" />\n" },		
-		{ "trigger": "script", "contents": "<!script file=\"{@global.scriptsdir}/modules/lib/$1.xml\" />" },
+		{ "trigger": "script", "contents": "<script file=\"{@global.scriptsdir}/modules/lib/$1.xml\" />" },
 		{ "trigger": "menu", "contents": "<var var=\"nav_themeGroup\" set=\"All\" />\n<var var=\"nav_moduleName\" set=\"$1\" />\n<script file=\"{@global.scriptsdir}/modules/lib/Nav_Click.xml\" />" },
 		{ "trigger": "submenu", "contents": "<var var=\"nav_themeGroup\" set=\"All\" />\n<var var=\"nav_moduleName\" set=\"${1:MODULE}\" />\n<var var=\"nav_subMenuItem\" set=\"${2:LIST_ITEM}\" />\n<script file=\"{@global.scriptsdir}/modules/lib/Nav_SubMenuItem.xml\" />" },
 		{ "trigger": "qalogin", "contents": "<script file=\"{@global.scriptsdir}/modules/lib/logout.xml\" />\n<script file=\"{@global.scriptsdir}/modules/lib/Login_qauser_Lib.xml\" />" },
