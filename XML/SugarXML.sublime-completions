@@ -3,7 +3,9 @@
 
 	"completions":
 	[
-		{ "trigger": "click", "contents": "click=\"true\"" },
+		{ "trigger": "exists", "contents": "exists=\"${1:true}\"" },	
+		{ "trigger": "required", "contents": "required=\"${1:false}\"" },
+		{ "trigger": "click", "contents": "click=\"${1:true}\"" },
 		{ "trigger": "admin", "contents": "<var var=\"nav_action\" set=\"admin_link\" />\n<script file=\"{@global.scriptsdir}/modules/lib/Nav_UserActions.xml\" />\n" },		
 		{ "trigger": "script", "contents": "<script file=\"{@global.scriptsdir}/modules/lib/$1.xml\" />" },
 		{ "trigger": "menu", "contents": "<var var=\"nav_themeGroup\" set=\"All\" />\n<var var=\"nav_moduleName\" set=\"$1\" />\n<script file=\"{@global.scriptsdir}/modules/lib/Nav_Click.xml\" />" },
