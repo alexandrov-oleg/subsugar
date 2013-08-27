@@ -3,6 +3,7 @@
 
 	"completions":
 	[
+		{ "trigger": "jscriptevent", "contents": "jscriptevent=\"${1:ondblclick}\"" },
 		{ "trigger": "exists", "contents": "exists=\"${1:true}\"" },	
 		{ "trigger": "required", "contents": "required=\"${1:false}\"" },
 		{ "trigger": "click", "contents": "click=\"${1:true}\"" },
